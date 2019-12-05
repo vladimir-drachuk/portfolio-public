@@ -1,0 +1,841 @@
+@font-face {
+    font-family: "Open Sans"; 
+    src: url(../fonts/OpenSans-Regular.ttf)
+}
+
+@font-face {
+    font-family: "Segoe WP N"; 
+    src: url(../fonts/SegoeWPN.ttf)
+}
+
+@font-face {
+    font-family: "Asap"; 
+    src: url(../fonts/Asap-Regular.otf)
+}
+
+@font-face {
+    font-family: "Lucida Sans"; 
+    src: url(../fonts/LSANSI.TTF)
+}
+
+@font-face {
+    font-family: "Segoe UI"; 
+    src: url(../fonts/SegoeUI.ttf)
+}
+
+@font-face {
+    font-family: "Segoe WP Light"; 
+    src: url(../fonts/segoe-wp-light.ttf)
+}
+
+@font-face {
+    font-family: "PT Sans"; 
+    src: url(../fonts/PTS55F.ttf)
+} 
+
+@font-face {
+    font-family: "PT Sans Narrow"; 
+    src: url(../fonts/PTN57F.ttf)
+} 
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+.wrapper {
+    background: url(../images/background-header.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    height: 566px;
+    width: 1300px;
+    margin: 0 auto;
+    padding-top: 28px;
+}
+
+.container {
+    display: flex;
+    width: 1020px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+h1 {
+    display: none;
+}
+
+header .logo p {
+    text-transform: uppercase;
+    color: #fff;
+    font-family: "Lucida Sans";
+    font-size: 41px;
+    letter-spacing: 0px;
+    font-style: italic;
+    text-align: center;
+    padding: 24px 0 0 6px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #f5c506;
+    width: 453px;
+    height: 41px;
+    margin-top: 43px;
+    box-shadow: -5px -5px 0 0 rgba(245,197,6,0.27), -10px -8px 0 0 rgba(245,197,6,0.27);
+}
+
+header nav li a {
+    display: flex;
+    align-items: center;
+    padding: 10px 22px 9px 10px;
+    text-transform: uppercase;
+    color: #9b7d08;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: "Segoe WP N";
+    font-weight: 700;
+    transition: color 0.3s linear, background 0.3s linear;
+}
+
+header nav li a:hover {
+    color: #58480b;
+    background: linear-gradient(to left, rgba(173, 147, 39, 0.5) , #f5c506);
+}
+
+header nav li img {
+    margin: 0 7px;
+}
+
+header nav li:not(:last-child) {
+    border-right: 1px solid #b99403;
+}
+
+header nav li:nth-child(2) a {
+    padding-right: 17px;
+}
+
+header .logo {
+    display: flex;
+}
+
+.video-slider {
+    display: flex;
+    margin-top: 57px;
+}
+
+.video-capture {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 35px;  
+}
+
+.vMobile {
+    display: none;
+ }
+
+.video-slider h2 {
+    font-size: 63px;
+    color: #f5c506;
+    font-family: "Asap";
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.video-slider h2.cool {
+    padding-right: 17px; 
+}
+
+.video-slider h2.minimal {
+    color: #fff;
+
+}
+
+.video-slider .container {
+    padding: 0 20px 0 10px;
+}
+
+.video-slider button {
+    width: 32px;
+    height: 57px;
+    background-color: #f5c506;
+    opacity: 0.71;
+    align-self: center;
+    border: 0;
+    cursor: pointer;
+}
+
+.video-slider button:hover {
+    opacity: 1;
+}
+
+.slider-right, .slider-left {
+    display: flex;
+    margin-bottom: 5px; 
+}
+
+.advantages {
+    background: url(../images/section2_bg.png);
+    margin-top: 68px;
+}
+.advantages .container {
+    justify-content: center;    
+}
+
+.advantages .column {
+    display: flex;
+    flex: 1;
+    text-transform: uppercase;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 212px;
+    border-left: 1px solid #d4d4d4;
+    line-height: 39px;    
+    padding: 0 0 29px 20px;   
+}
+
+.advantages .column3 {
+    border-right: 1px solid #d4d4d4;
+}
+
+.advantages .img1 {
+    padding: 0 24px 0 0;  
+}
+
+.advantages .column > div,.advantages h3 {
+    align-self: center;
+    font-size: 27px;
+    letter-spacing: 0px;
+    color: #000;
+    font-family: "Segoe WP Light";
+    font-weight: 100;
+    text-align: center;
+}
+
+.advantages .column:first-child img {
+    width: 109px;
+    margin-right: 21px;
+}
+
+.advantages .column:nth-child(2) img {
+    width: 92px;
+    margin-left: 5px;
+}
+
+.advantages .column:last-child img {
+    width: 80px;
+    margin-right: 38px;
+}
+
+.advantages .column:nth-child(2) h3 {
+    margin-left: 5px;
+}
+
+.advantages .column:last-child h3 {
+    margin-right: 32px;
+}
+
+.scroll {
+    background: url(../images/Layer10copy3.png);
+    box-shadow: inset 0 2px 5px #ad9327;
+    height: 509px;
+}
+
+.scroll .container {
+    display: block;
+}
+
+.scroll .wrap-scroll-content {
+    overflow: auto;
+}
+
+.scroll .scroll-content {
+    flex-direction: column;
+    overflow: auto;
+    width: 200%;
+    margin-bottom: 42px;   
+}
+
+::-webkit-scrollbar {
+    width: 0;    
+}
+
+ ::-webkit-scrollbar-track {
+    background-color: rgba(255,255,255,0.5);
+    width: 20px;
+    border-radius: 60px;
+    margin: 0 49px 0 74px;
+    border: 1px solid #f8c305;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(237,158,3);
+    border-radius: 10px;
+    border: 1px solid #f8c305;
+}
+
+.scroll h3 {
+    font-family: "PT Sans";
+    font-size: 37px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 31px 0 31px 2px;  
+    letter-spacing: 0.4px;  
+}
+
+.scroll .flex-wrapper {
+    display: flex;
+}
+
+.scroll .flex-wrapper .column { 
+    display: flex;
+    height: 233px;
+    width: 340px;
+} 
+
+.scroll .flex-wrapper .text-column {
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #ec9e03;
+}
+
+.scroll .flex-wrapper .text-column p {
+    font-family: "Segoe WP Light";
+    line-height: 38px;
+    color: #ffffff;
+    font-size: 29px;
+    padding: 15px 0 0 31px;
+    letter-spacing: 0.28px;
+}
+
+.scroll .flex-wrapper .text-column button {
+    align-self: flex-end;
+    margin: 0 13px 9px 0;
+    background: none;
+    border: none;    
+}
+
+.scroll .flex-wrapper .text-column button:hover {
+    opacity: 0.5;
+}
+
+.scroll .flex-wrapper video {
+    display: flex;
+}
+
+.scroll .flex-wrapper .twitter-column {
+    flex-direction: column;
+    background-color: #ec9e03;
+    margin-left: 11px;  
+    width: 329px;  
+}
+
+.scroll .flex-wrapper .twitter-column .number {
+    font-family: "Segoe WP Light";
+    font-size: 25px;
+    color: #fff;
+    align-self: flex-end;
+    padding: 11px 19px 14px 0;  
+}
+
+.scroll .flex-wrapper .twitter-column .twitter {
+    align-self: center;
+    padding-bottom: 12px;  
+}
+
+.scroll .flex-wrapper .twitter-column button {
+    align-self: flex-end;
+    background: none;
+    border: none;
+    margin-right: 10px; 
+}
+
+.scroll .flex-wrapper .twitter-column button:hover {
+    opacity: 0.5;
+}
+
+.scroll .date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 112px;
+    height: 86px;
+    background-color: #ddb101;
+}
+
+.scroll .date .day {
+    font-family: "Segoe UI", serif;
+    font-size: 51px;
+    letter-spacing: 1px;
+    color: #fff;
+    font-weight: bold;
+    padding-left: 6px;
+    line-height: 1.25;
+}
+
+.scroll .date .month {
+    font-family: "Segoe WP N";
+    font-size: 21px;
+    color: #b26529;
+    text-transform: uppercase;
+    font-weight: 100;
+    line-height: 0.5;
+    padding-left: 5px;  
+    letter-spacing: 0.3px; 
+}
+
+.scroll .form {
+    display: none;
+}
+
+.devices {
+    background: url(../images/Layer32.png);
+    height: 499px;
+}
+
+.devices .container {
+    flex-direction: column;
+}
+
+.devices h3 {
+    display: flex;
+    justify-content: center;
+    font-family: "PT Sans";
+    font-size: 43px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #f5c506;    
+    letter-spacing: 0.5px;
+    padding: 36px 0px 48px 7px; 
+}
+
+.devices .section-content {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding-left: 20px;
+}
+
+.devices .section-content .list {
+    margin-top: 42px;
+    width: 382px;
+}
+
+.devices .section-content .round {
+    position: absolute;
+    display: flex;
+    top: -45px;
+    left: -2px;
+    width: 116px;
+    height: 116px;
+    border-radius: 58px;
+    background-color: #f5c506;
+    color: #fff;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding: 4px 0 0 6px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: "PT Sans Narrow", san-serif;
+}
+
+.devices .section-content ul li {
+    display: flex;
+    align-items: baseline;
+    font-family: "Open Sans";
+    font-size: 22px;
+    line-height: 25px;
+    font-weight: 400;
+    color: #a9a9a7;
+    letter-spacing: 0.1px;
+}
+
+.devices .section-content ul li::before {
+    content: "";
+    display: inline-flex;
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    background-color: #ddb101;
+    margin-right: 20px;
+}
+
+.devices .section-content ul li:first-child {
+    margin-bottom: 25px;
+}
+
+.devices .section-content ul li:nth-child(2) {
+    margin-bottom: 17px;
+}
+
+.devices .section-content ul li:nth-child(3) {
+    margin-bottom: 25px;
+}
+
+footer {
+    background-color: #4c4c4c;
+    box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.5);
+    height: 62px;
+}
+
+footer .container {
+    justify-content: flex-start;
+    align-items: center;
+}
+
+footer .container img{
+    height: 58px;
+    padding: 5px 0px 0 0px
+    
+}
+
+footer .container p {
+    text-transform: uppercase;
+    color: #fff;
+    font-family: "Lucida Sans";
+    font-size: 30px;
+    letter-spacing: 0px;
+    font-style: italic;
+    text-align: center;
+    padding: 6px 0 0 2px;
+}
+
+
+
+@media (max-width: 1300px) {
+    .wrapper{
+        width: auto;
+    }
+   
+    .container {
+        width: 640px;
+    }
+
+    .wrapper {
+        padding-top: 0;
+        background: none;
+    }
+
+   header {
+        background: linear-gradient(to top, #44414a, #5c5c5c);
+   }
+
+   header .logo {
+        padding: 10px 0 0 13px;         
+   }
+
+   header .logo img {
+       height: 40px;
+       width: 40px;
+   }
+
+   header .logo p {
+    font-size: 19px;
+    padding: 12px 0 0 5px;  
+    letter-spacing: 0.8px;  
+   }
+
+   header nav ul {
+       margin: 0;
+       box-shadow: none;
+       height: 62px;
+   }
+
+   header nav li img {
+        margin-right: 11px;
+   }
+
+   header nav li:first-child a {
+        padding: 0 23px 0 16px;
+   }
+
+   header nav li:first-child img {
+        width: 25px;
+    }
+    
+    header nav li:last-child a {
+        padding: 0 12px 0 5px;
+   }
+
+   header nav li:last-child img {
+        width: 27px;
+        margin-right: 13px;
+   }
+
+   header nav li a {
+        font-size: 18.1px;
+        font-weight: 400;
+        letter-spacing: 0.5px;
+        height: 100%;
+   }
+
+   header nav li:nth-child(2) a {
+        padding: 0 15px 0 0;
+    }
+
+   .video-slider {
+       margin: 0;
+       background: #fff;
+   } 
+
+   .video-slider .container {
+       padding: 0;
+   }
+
+    .vMobile {
+        display: block;
+    }
+
+    .advantages {
+        margin-top: 0;
+    }
+
+    .advantages h3 {
+        font-size: 24px;
+        letter-spacing: -0.4px;
+    }
+
+    .advantages .column {
+        border: none;
+        height: 170px;
+        padding: 0 0 24px 20px;
+
+    }
+
+    .advantages img {
+        height: 65px;        
+    }
+
+    .advantages .column:first-child img {
+        margin: 0 54px 5px 0;
+        height: 62px;
+    }
+    
+    .advantages .column:nth-child(2) img {
+        margin-left: 0px;
+        height: 70px;
+    }
+    
+    .advantages .column:last-child img {
+        margin-left: 13px;
+        height: 70px;
+    }
+    
+    .advantages .column:first-child h3 {
+        margin-left: -42px;
+    }
+    
+    .advantages .column:nth-child(2) h3 {
+        margin-left: 0;
+    }
+    
+    .advantages .column:last-child h3 {
+        margin-left: 18px;
+    }
+
+    .scroll{
+        background: none;
+        box-shadow: none;
+        height: 484px;
+    }
+
+    .scroll .flex-wrapper {
+    justify-content: space-evenly;
+    }
+    
+    .scroll .flex-wrapper .column {
+        width: 315px;
+        margin: 10px 0;
+    }
+
+    .scroll .flex-wrapper .text-column {
+        width: 298px;
+        flex-direction: row;
+    }
+
+    .scroll .flex-wrapper .text-column p {
+        padding: 16px 15px 0 26px;
+        letter-spacing: 0.28px;
+        line-height: 33.1px;
+    }
+
+    .scroll .flex-wrapper .text-column button {
+        padding: 0 10px 15px 0;
+    }
+
+    .scroll .scroll-content {
+        width: 100%;
+    }
+
+    .scroll .form {
+        display: flex;
+    }
+
+    .scroll .form {
+        background-color: #f5c607;
+        height: 234px;
+        justify-content: space-evenly;
+    }
+    
+    .scroll .form .twitterMobile {
+        display: flex;
+        flex: 1;
+        justify-content: center; 
+    }
+    
+    .scroll .form .twitterMobile {
+        align-items: center;
+    }
+    
+    .scroll .form .twitterMobile img {
+        margin: 14px 0 0 42px;
+    }
+    
+    .scroll .form ul {
+        display: flex;
+        flex-direction: column;
+        padding-left: 12px;
+    }
+    
+    .scroll .form li {
+        margin: 5px 0 8px 0; 
+        background-color: #fffcfe;
+        border-radius: 10px;
+        height: 42px;
+    }
+    
+    .scroll .answer {
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding: 0 19px;
+    }
+    
+    .scroll .form li::before {
+        content: url(../images/twitter-before-first.svg);
+        position: absolute;
+        left: -9px;
+        top: 20px;
+    }
+    
+    .scroll .form li:nth-child(2) {
+        opacity: 0.7;
+    }
+    
+    .scroll .form li:nth-child(3) {
+        opacity: 0.6;
+    }
+    
+    .scroll form input {
+        height: 30px;
+    }
+
+    .scroll form {
+        display: flex;
+        align-self: flex-end;
+        justify-content: flex-end;
+        width: 272px;
+        margin-top: 6px;        
+    }
+    
+    .scroll form input[type='text'] {
+        flex-grow: 1;
+        border-radius: 10px 0 0 10px;
+        padding: 10px;
+        box-shadow: inset 3px 3px 4px #e6e6e6;
+        border: 1px solid #d0a706;
+        outline: none;
+    }
+
+    .scroll form input[type='text']:focus, 
+    .scroll form input[type='text']:focus + input {
+        border: 1px solid #8d6411;
+    }
+    
+    .scroll form input[type='submit'] {
+        align-self: flex-end;
+        border-radius: 0 10px 10px 0;
+        border: 1px solid #d0a706;
+        margin-left: -5px;    
+        padding: 0 13px;
+        color: #fff;
+        background: linear-gradient( to top, #cf8e0b, #eaa826);
+        letter-spacing: 1px;
+        cursor: pointer;
+    }
+
+    .scroll form input[type='submit']:hover {
+        background: linear-gradient( to top, #eaa826, #cf8e0b);
+    }
+    
+    .scroll .mail {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        padding: 19px 32px 0 32px;
+    }
+    
+    .scroll .form .answer p {
+        font-size: 13px;
+        letter-spacing: 0.2px;
+        color: #8f8e8e;
+        font-family: "Arial";
+    }
+    
+    .devices{
+        height: 466px;
+        background-color: #474747;
+        background-image: none;
+    }
+
+    .devices .section-content .round {
+        top: -15px;
+        left: 26px;
+    }
+
+    .devices h3 {
+        padding: 28px 17px 48px 7px;
+        font-family: "Segoe WP N";
+        letter-spacing: 0.6px;
+        font-size: 40px;
+    }
+    .devices .section-content{
+        padding: 28px 0 0 59px;
+    }
+    footer{
+        height: 43px;
+    }
+
+    footer .container img {
+        height: 40px;
+        padding: 3px 0 0 60px;
+    }
+
+    footer .container p {
+        font-size: 17px;
+        padding: 5px 0 0 4px;
+    }
+
+    .video-slider .slider-left, 
+    .video-slider .slider-right, 
+    .video-capture,
+    .scroll h3,
+    .vDesktop,
+    .scroll .flex-wrapper .twitter-column,
+    .scroll .date,
+    .devices .list {
+        display: none;
+    }
+}
